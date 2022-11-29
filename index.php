@@ -21,13 +21,13 @@
             <h1 class="text-center">ToDoList</h1>
             <div class="row justify-content-center">
                 <ul class="list-group">
-                    <li class="list-group-item" v-for="(todo,index) in toDoList" :key="index">{{todo}}</li>
+                    <li class="list-group-item" v-for="todo in toDoList">{{todo}}</li>
                 </ul>
             </div>
             <div class="row justify-content-center">
                 <div class="col-6 mt-5">
                     <input class="form-control" type="text" placeholder="Inserisci nuovo toDo" v-model="newToDo">
-                    <button class="btn btn-primary mt-1" @click="addToDo">Salva</button>
+                    <button class="btn btn-primary mt-1" @click="addTodo">Salva</button>
                 </div>
             </div>
         </div>
